@@ -1,0 +1,13 @@
+setInterval(answer,100)
+function answer(){
+    document.querySelector('p').innerText='='+eval(document.querySelector('.field').value);
+    if (document.querySelector('p').innerText=='=undefined'){
+        document.querySelector('p').style.opacity='0';
+        document.querySelector('p').style.display='none';     
+        
+    }else{
+        document.querySelector('p').style.opacity='1';
+        document.querySelector('p').style.display='inline-block';     
+    }
+}
+
